@@ -1,0 +1,105 @@
+.controls-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  animation: fadeIn 0.4s ease 0.15s both;
+}
+
+.gravity-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.control-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--lighter-gray);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.gravity-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 65px);
+  grid-template-rows: repeat(3, 65px);
+  gap: 8px;
+}
+
+.grid-spacer {
+  background: transparent;
+}
+
+.grid-center {
+  background: var(--dark-gray);
+  border: 1px solid var(--medium-gray);
+}
+
+.gravity-btn {
+  background: var(--medium-gray);
+  border: 1px solid var(--light-gray);
+  color: var(--off-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.gravity-btn svg {
+  width: 28px;
+  height: 28px;
+}
+
+.gravity-btn:hover:not(:disabled) {
+  background: var(--light-gray);
+  border-color: var(--lighter-gray);
+}
+
+.gravity-btn:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.gravity-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.action-controls {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.action-btn {
+  background: var(--medium-gray);
+  border: 1px solid var(--light-gray);
+  color: var(--off-white);
+  padding: 11px 20px;
+  font-size: 13px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-width: 110px;
+  justify-content: center;
+}
+
+.action-btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+.action-btn:hover:not(:disabled) {
+  background: var(--light-gray);
+  border-color: var(--lighter-gray);
+}
+
+.action-btn:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.action-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
